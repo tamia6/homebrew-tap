@@ -1,8 +1,8 @@
 class Rfig < Formula
   desc "Inline terminal command completion for zsh"
   homepage "https://github.com/tamia6/rfig"
-  url "https://github.com/tamia6/rfig/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "1c1a80ffd1a0f5fb5f0012d6747d210f820821c3fec12d8dae8f6910ebfa9166"
+  url "https://github.com/tamia6/rfig/archive/refs/tags/v0.1.1.tar.gz"
+  sha256 "e99d1020e1004f39f72a734172786a67b8ca9f2dc75372a6cccded3ac98a3902"
   license "MIT"
 
   depends_on "rust" => :build
