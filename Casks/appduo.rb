@@ -1,15 +1,16 @@
 cask "appduo" do
   arch arm: "arm64", intel: "x86_64"
 
-  version "0.1.6"
-  sha256 arm:   "7999cd60336f5cc8ae0a93117490cc1d981b960f8f6c175579d8e5b42d4dfcd7",
-         intel: "d1e1534034983dd1c6a65df8476da674871f257582d27fe7e986f1f7a5ef5cd1"
+  version "0.1.8"
+  sha256 arm:   "b41b956ea94f44a396883cfba62299697b580785cefb438fe77e46f14fabbbf5",
+         intel: "4eef92f18714d796a3f9d24d3c4b61a60340b304d4cd1b588bca1424d0c228f8"
 
   url "https://github.com/tamia6/AppDuo/releases/download/v#{version}/AppDuo-#{arch}.dmg"
   name "AppDuo"
   desc "Application cloner with isolated data, names, and icons"
   homepage "https://tamia6.github.io/AppDuo/"
 
+  auto_updates true
   depends_on macos: :sonoma
 
   app "AppDuo.app"

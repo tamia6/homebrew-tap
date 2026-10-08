@@ -14,8 +14,10 @@ To update:
 
 ```sh
 brew update
-brew upgrade --cask tamia6/tap/appduo
+brew upgrade --cask --greedy tamia6/tap/appduo
 ```
+
+AppDuo 0.1.7 and later also support signed in-app updates. Versions before 0.1.7 require one manual upgrade. The explicit `--greedy` option includes this self-updating cask when upgrading with Homebrew.
 
 Uninstalling the cask preserves AppDuo's clone configuration and data.
 
