@@ -1,9 +1,9 @@
 cask "appduo" do
   arch arm: "arm64", intel: "x86_64"
 
-  version "0.1.8"
-  sha256 arm:   "b41b956ea94f44a396883cfba62299697b580785cefb438fe77e46f14fabbbf5",
-         intel: "4eef92f18714d796a3f9d24d3c4b61a60340b304d4cd1b588bca1424d0c228f8"
+  version "0.1.9"
+  sha256 arm:   "8533ede2e51189354e0dd6962cde74849bd3ede94a013e70d3b7c69433f48c43",
+         intel: "17d109255398fb33af78b82327e7c21593392e98677153ee8f29f4b393bd58e7"
 
   url "https://github.com/tamia6/AppDuo/releases/download/v#{version}/AppDuo-#{arch}.dmg"
   name "AppDuo"
