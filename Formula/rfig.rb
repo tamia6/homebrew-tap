@@ -1,8 +1,8 @@
 class Rfig < Formula
   desc "Inline terminal command completion for zsh, Bash and Fish"
   homepage "https://github.com/tamia6/rfig"
-  url "https://github.com/tamia6/rfig/archive/refs/tags/v0.3.0.tar.gz"
-  sha256 "152e530a3a9b7588ccee077a663d500083d47cc1977e9ae58cad35f7162833e7"
+  url "https://github.com/tamia6/rfig/archive/refs/tags/v0.3.1.tar.gz"
+  sha256 "8f6f88984f02a9aebc0cb1b3b7cc1df4bd3163b8ed2b9d14730488bcdf5db1cf"
   license "MIT"
 
   depends_on "rust" => :build
@@ -16,6 +16,8 @@ class Rfig < Formula
     <<~EOS
       Run `rfig setup` to scan your commands and enable integration for your default shell.
       Use `rfig setup --shell zsh|bash|fish` to choose another shell.
+      Existing installations: run `#{opt_bin}/rfig setup` once to use upgrade-safe adapter links.
+      Open a new shell session after upgrading rfig.
       Bash requires 4.4 or newer; Fish requires 3.6 or newer.
     EOS
   end
